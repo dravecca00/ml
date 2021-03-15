@@ -2,7 +2,9 @@
 // pasado desde ml.php que inicia el proceso y llega aca por estar
 // definida como redirect_uri en app que creamos en MercadoLibre
 // nos pasan el valor de {code}
-$codeapp = $_GET['code'];
+if(isset($_GET['code'])){
+    $codeapp = filter_var ( $_GET['code'], FILTER_SANITIZE_STRING);
+    }else{die('error');}
 
 function SendPost($url, $params){
     $ch = curl_init($url);
@@ -30,8 +32,8 @@ function conseguirListado($url, $custom_headers){
 // buscar access token
 $postfields = [
     'grant_type' => 'authorization_code', 
-    'client_id' => '3573083926674623',
-    'client_secret' => 'xxcgpBPmpMBSuUijvfsfbYNJrSp16hoQ',
+    'client_id' => '1234',
+    'client_secret' => 'NJrSp16hoQ',
     'code' => $codeapp,
     'redirect_uri' => 'https://redengo.com/bots/qrcheck/mlredirect.php'
 ];
