@@ -3,6 +3,7 @@ Se presento el challenge de realizar un codigo para crear logs de publicaciones 
 El codigo se realizo en php constando de dos archivos
 * ml.php es el entry point por web donde definimos parametros obtenidos al generar la aplicacion en Mercadolibre https://developers.mercadolibre.com.ar/
 * mlredirect.php es el codigo que recibe el callback inicial con un parametro "code" y obtiene el access token para poder hacer la consulta a la API
+* archivo txt ejemplo de log obtenido
 
 ## Prueba en vivo
 El codigo se encuentra en vivo para probarlo..
