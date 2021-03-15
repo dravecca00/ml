@@ -5,7 +5,7 @@
 // en la redirect_uri obtenemos un codigo para continuar con el proceso
 // en este caso continuamos con el archivo mlredirect.php
 
-$client_id = 3573083926674623;
+$client_id = 1234; 
 $redirect_uri = "https://redengo.com/bots/qrcheck/mlredirect.php";
 $url =  "http://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=$client_id&redirect_uri=$redirect_uri";
 ?>
